@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lm.mapping.TbMapper">	
+
+	<insert id="insertTb1" parameterType="int">
+		insert into tb1(id,info) values(#{param1},"hehe")
+	</insert>	
+	
+	<insert id="insertTb2" parameterType="int">
+		insert into tb2(id,info) values(#{param1},"hehe")
+	</insert>
+	
+</mapper>

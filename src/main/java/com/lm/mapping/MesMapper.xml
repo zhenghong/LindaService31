@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lm.mapping.MesMapper">	
+
+	<select id="countMesList" parameterType="String" resultType="int">
+		select count(*) from mes_applied where mes_id=#{param1}   
+	</select>
+	
+	<insert id="insertMes" parameterType="String">
+		insert into mes_applied(mes_id) values(#{param1})
+	</insert>
+	
+</mapper>
